@@ -1,0 +1,7 @@
+<div className='Search'>
+    <form [formGroup]="searchBarForm" className="form" (ngSubmit)="this.onSubmit()">
+      <input type="text" [formControl] = "searchData" placeholder="e.g. Gin"/>
+      <button (click)="spiritEntered">Search</button>
+    </form>
+</div>
+
